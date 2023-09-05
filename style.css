@@ -1,0 +1,437 @@
+*{
+       font-family: 'Roboto', Arial;
+}
+
+.thumbnail {
+       width: 100%;
+       transition: ease-out .5s;
+       
+
+
+}
+.thumbnail:hover{
+       transform: scale(0.9);
+       opacity: .6;
+}
+
+
+.videogrid {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       column-gap: 17px;
+       row-gap: 30px;
+     
+      
+}
+
+.videoauthor,
+.views {
+
+       font-size: 12px;
+       color: rgb(174, 167, 167);
+}
+
+.videoauthor {
+
+
+       margin-bottom: 0;
+}
+
+.views {
+       margin-top: 0;
+}
+
+
+.videoinfogrid {
+       display: grid;
+       grid-template-columns: 50px 1fr;
+}
+
+.channelpic {
+
+       vertical-align: top;
+}
+
+.channelpic .icon {
+
+       width: 30px;
+       border-radius: 50px;
+
+}
+
+.videotitle {
+       margin-top: 0;
+       font-size: 16px;
+       font-weight: bolder;
+       line-height: 20px;
+       margin-bottom: 8px;
+       margin-left: -10px;
+       
+      
+
+}
+
+body {
+       margin: 0;
+       padding: 80px;
+       padding-left: 100px;
+       padding-right: 24px;
+       background-color: rgb(247, 247, 247);
+}
+
+.header {
+       height: 65px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
+       background-color: white;
+    border-bottom-width: .5px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    z-index: 100;
+
+}
+
+.leftsection {
+       display: flex;
+       align-items: center;
+       width: 150px;
+
+}
+
+.middlesection {
+      
+       flex: 1;
+       margin-left: 70px;
+       margin-right: 30px;
+       max-width: 500px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+
+}
+
+.rightsection {
+       display: flex;
+      
+       width: 200px;
+       align-items: center;
+       justify-content: space-between;
+       margin-right: 20px;
+       flex-shrink: 0;
+
+}
+
+.logo {
+       height: 23px;
+}
+
+.menu {
+       height: 20px;
+       margin-left: 25px;
+       margin-right: 20px;
+
+
+}
+.searchicon{
+       height: 25px;
+     
+
+}
+.voiceicon{
+       height: 20px;
+
+}
+.searchbtn{
+       height: 36px;
+       width: 60px;
+       margin-top: px;
+      
+       margin-left: -15px;
+       background-color: rgb(239, 234, 234);
+       border-top-right-radius: 60px;
+       border-bottom-right-radius: 60px;
+       border-style: solid;
+       border-color: rgb(226, 223, 223);
+       box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+       cursor: pointer;
+       position: relative;
+       display: flex;
+       justify-content: center;
+      
+     
+
+
+}
+.searchtooltip{
+       position: absolute;
+       opacity: 0;
+       background-color: rgb(80, 79, 79);
+       color: white;
+       font-size: 10px;
+       padding-top: 4px;
+       padding-bottom: 4px;
+       padding-left: 8px;
+       padding-right: 8px;
+       border-radius: 2px;
+       bottom: -15px;
+       left: 20px;
+       transition: ease-in .3s;
+}
+
+.searchbtn:hover .searchtooltip,
+.uploadcontainer:hover .searchtooltip,
+.app:hover .searchtooltip,
+.notificationcontainer:hover .searchtooltip
+{
+       background-color: rgb(80, 79, 79);
+       opacity: 1;
+       pointer-events: none;
+       white-space: nowrap;
+       z-index: 300;
+       
+}
+.profilecontainer:hover .searchtooltip{
+       background-color: rgb(80, 79, 79);
+       opacity: 1;
+       pointer-events: none;
+      
+       z-index: 300;
+}
+.searchbtn:hover{
+       background-color: rgb(181, 179, 177);
+}
+.voicebtn{
+       border-radius: 100%;
+       height: 38px;
+       width: 40px;
+       border: none;
+       margin-left: 15px;
+       cursor: pointer;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       white-space: nowrap;
+       
+}
+.uploadcontainer,.app ,.notificationcontainer{
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer;
+}
+.profilecontainer{
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer;
+       margin-right: 15px;
+}
+.uploadcontainer .searchtooltip{
+       opacity: 0;
+}
+
+.voicebtn:hover .searchtooltip
+{
+       background-color: rgb(80, 79, 79);
+       opacity: 1;
+       pointer-events: none;
+       white-space: nowrap;
+       
+}
+.voicebtn:hover{
+       background-color: rgb(181, 179, 177);
+}
+
+.searchbox{
+       flex: 1;
+       height: 30px;
+       padding-left: 12px;
+       font-size: 16px;
+       border-style: solid;
+       border-color: rgb(226, 223, 223);
+       border-radius: 50px;
+       box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+       max-width: 400px;
+       
+
+}
+
+.uploadicon{
+       height: 24px;
+
+}
+.appsicon{
+       height: 24px;
+
+}
+.notificationicon{
+       height: 24px;
+
+}
+.profileicon{
+       height: 38px;
+       width: 38px;
+       border-radius: 100%;
+
+      
+
+
+}
+.sidebar{
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       top: 65px;
+       width: 72px;
+      background-color: white;
+       z-index: 200;
+     padding-top: 5px;cursor: pointer;
+      
+
+
+}
+.thumbnail-row{
+       position: relative;
+      
+}
+.timestamp{
+       position: absolute;
+       bottom: 10px;
+       right: 8px;
+       background-color: black;
+       color: white;
+       font-size: 12px;
+       font-weight: 600;
+       padding-left: 2px;
+       padding-right: 2px;
+       padding-top: 4px;
+       padding-bottom: 4px;
+       border-radius: 2px;
+}
+.notificationcontainer{
+       position: relative;
+}
+.count{
+       position:absolute;
+       background-color: rgb(221, 0, 0);
+       border-radius: 10px;
+       font-size: 11px;
+       top: -5px;
+       right: -5px;
+       padding-left: 5px;
+       padding-top: 2px;
+       padding-bottom: 2px;
+       color: white;
+       padding-right: 5px;
+       
+       
+}
+.sidebarlink{
+      
+       height: 76px;
+       display: flex;
+     justify-content: center;
+     align-items: center;
+       flex-direction: column;
+       
+
+
+   
+}
+.sidebarlink:hover{
+       background-color: gainsboro;
+       
+}
+.sidehome{
+       height: 30px;
+       width: 30px;
+       margin-bottom: 4px;
+      
+}
+.sidebarlink div{
+       color: rgb(27, 26, 26);       
+       font-size: 10px;
+       font-weight: 800;
+}
+@media (max-width : 600px){
+       .videogrid{
+              grid-template-columns: 1fr 1fr;
+       }
+}
+@media (min-width : 1000px){
+       .videogrid{
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+       }
+}
+.iconmetallica{
+       width: 28px;
+height: 28px;
+border-radius: 100%;
+
+}
+.iconmegadeth{
+       width: 28px;
+height: 28px;
+border-radius: 100%;
+
+}
+.iconathleanx{
+width: 28px;
+height: 28px;
+border-radius: 100%;
+}
+.footer{
+       width: 100%;
+       height: 90px;
+       background-color: white;
+       position: fixed;
+     
+      bottom: 0;
+      left: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       overflow: auto;
+     
+     
+  
+       
+}
+.footer .heading{
+       margin-left: 100px;
+       font-weight: bolder;
+       font-size: 19px;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.footer .subicons{
+      
+      
+       margin-left: 250px;
+       gap: 50px;
+
+       position: absolute;
+       display: flex;
+       flex: 0 0 auto;
+       
+
+      
+}
+.imgfoot{
+       border-radius: 100%;
+       width: 60px;
+       height: 60px;
+       cursor: pointer;
+       transition: ease-in-out .8s;
+     
+       
+}
+.imgfoot:hover{
+       transform: scale(1.4);
+}
