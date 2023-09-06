@@ -397,7 +397,10 @@ border-radius: 100%;
        display: flex;
        justify-content: space-between;
        align-items: center;
-       overflow: auto;
+       overflow-x: auto;
+       margin-bottom: -10px;
+       margin-right: -10px;
+      
      
      
   
@@ -435,3 +438,4 @@ border-radius: 100%;
 .imgfoot:hover{
        transform: scale(1.4);
 }
+
